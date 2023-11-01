@@ -1,8 +1,11 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
+import LineChart from "./LineChart";
 import fetchCoin from "./fetchCoin";
+
 const SingleCoinDetails = () => {
   const { id } = useParams();
+
   const results = useQuery(["details", id], fetchCoin, {
     refetchOnMount: true,
   });
@@ -16,16 +19,18 @@ const SingleCoinDetails = () => {
   }
 
   if (results.isError) {
-    return <h1>Error: Coin not found</h1>;
+    return <h1>Error: {id} not found</h1>;
   }
 
   const coin = results.data;
-  console.log(coin);
 
   return (
     <div className="details">
       <div>
+        <p>Rank #{coin.market_cap_rank}</p>
         <p>{coin.name}</p>
+        <p>${coin.market_data.current_price.usd}</p>
+        <LineChart />
       </div>
     </div>
   );
