@@ -2,7 +2,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import AllCoins from "./AllCoins";
-import "./styles/style.css";
+import "../styles/style.css";
 import SingleCoinDetails from "./SingleCoinDetails";
 
 const queryClient = new QueryClient({

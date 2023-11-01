@@ -1,0 +1,30 @@
+.coin-rank {
+  display: inline-block;
+  border-radius: 10%;
+  padding: 0.25em;
+  background-color: #56595d;
+}
+.coin-name-and-symbol {
+  display: flex;
+  align-items: center;
+}
+
+.coin-name-and-symbol img {
+  height: 28px;
+  padding-right: 0.5em;
+}
+.coin-name-and-symbol h1 {
+  font-size: 1.5em;
+  padding-right: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.coin-name-and-symbol span {
+  block-size: fit-content;
+}
+
+.coin-price {
+  font-size: 2em;
+  margin-top: 0.5em;
+}

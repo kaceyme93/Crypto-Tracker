@@ -1,4 +1,4 @@
-import "./styles/Coin.css";
+import "../styles/Coin.css";
 
 const Coin = (props) => {
   const {

@@ -2,8 +2,8 @@
 import { useQuery } from "@tanstack/react-query";
 import Coin from "./Coin";
 import SearchParams from "./SearchParams";
-import fetchCoins from "./fetchCoins";
-import "./styles/AllCoins.css";
+import fetchCoins from "../FetchFunctions/fetchCoins";
+import "../styles/AllCoins.css";
 
 const AllCoins = () => {
   const results = useQuery(["details"], fetchCoins, {

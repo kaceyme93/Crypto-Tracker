@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./styles/SearchParams.css";
+import "../styles/SearchParams.css";
 
 const SearchParams = () => {
   const [name, setName] = useState("");
