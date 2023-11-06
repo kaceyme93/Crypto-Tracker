@@ -6,7 +6,6 @@ import "../styles/SingleCoinDetails.css";
 
 const SingleCoinDetails = () => {
   const { id } = useParams();
-
   const results = useQuery(["details", id], fetchCoin, {
     refetchOnMount: true,
   });
@@ -24,7 +23,6 @@ const SingleCoinDetails = () => {
   }
 
   const coin = results.data;
-  console.log(coin);
 
   return (
     <div className="details">

@@ -1,0 +1,18 @@
+button:hover {
+  cursor: pointer;
+}
+button {
+  color: #fcfbf7;
+  background-color: #26292f;
+  border: solid 0.5px white;
+}
+.active {
+  color: #229200;
+  background-color: #3e4146;
+}
+#day-selector {
+  border-radius: 5px 0 0 5px;
+}
+#max-selector {
+  border-radius: 0 5px 5px 0;
+}
